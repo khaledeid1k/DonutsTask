@@ -23,6 +23,8 @@ val lightTextColor = Color(0xFFFF7074)
 val Brand500 = Color(0xFFD7E4F6)
 val Brand300 = Color(0xFFD4E4FE)
 val Brand100 = Color(0xFFEAF1FE)
+val Brand400 = Color(0xCC000000)
+val Brand600 = Color(0xFF000000)
 //endregion
 
 
@@ -30,7 +32,7 @@ val Brand100 = Color(0xFFEAF1FE)
 //region Light Colors
 val LightPrimary = Color(0x99000000)
 val LightSecondary = Color(0xFF57595A)
-val LightTertiary = Color(0xFF8D8F8F)
+val LightTertiary = Color(0xFFf6f6f6)
 
 val LightBackground = Color(0xFFF0F5FD)
 

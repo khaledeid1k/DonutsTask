@@ -8,4 +8,8 @@
     <string name="today_offers">Today Offers</string>
     <string name="strawberry_wheel">Strawberry Wheel</string>
     <string name="these_baked_strawberry_donuts_are_filled_with_fresh_strawberries">These Baked Strawberry Donuts are filled with fresh strawberries</string>
+    <string name="about_gonut">About Gonut</string>
+    <string name="describe">These soft, cake-like Strawberry Frosted Donuts feature fresh strawberries and a delicious fresh strawberry glaze frosting. Pretty enough for company and the perfect treat to satisfy your sweet tooth.</string>
+    <string name="quantity">Quantity</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>

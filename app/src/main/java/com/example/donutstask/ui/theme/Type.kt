@@ -1,6 +1,7 @@
 package com.example.donutstask.ui.theme
 
 import androidx.compose.material3.Typography
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -134,6 +135,13 @@ object Type {
         fontWeight = FontWeight.Medium,
         fontSize = textSize18,
         color = lightTextColor,
+    )
+    val SubTitle2 =  TextStyle(
+        fontSize = 14.sp,
+        fontFamily = FontFamily(Font(R.font.inter_light)),
+        fontWeight = FontWeight.Normal,
+        color = Color(0x99000000),
+        letterSpacing = 0.7.sp,
     )
     val Title2 = TextStyle(
         fontFamily = FontFamily(Font(R.font.inter_light)),

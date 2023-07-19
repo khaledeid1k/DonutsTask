@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.donutstask.R
 import com.example.donutstask.ui.theme.Brand500
+import com.example.donutstask.ui.theme.Brand600
 import com.example.donutstask.ui.theme.LightPrimary
 import com.example.donutstask.ui.theme.MaxLines
 import com.example.donutstask.ui.theme.TextWidth
@@ -132,7 +133,7 @@ fun TodayOffer() {
                     text = "$16",
                     style = Type.TextButton,
                     fontSize = textSize24,
-                    color = LightPrimary,
+                    color = Brand600,
                     fontWeight = FontWeight.Bold
                 )
             }

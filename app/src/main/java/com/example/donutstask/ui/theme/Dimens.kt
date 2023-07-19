@@ -83,6 +83,7 @@ val TextWidth = 250.dp
 val radius15 = 15.dp
 val radius16 = 16.dp
 val radius24 = 24.dp
+val radius40 = 40.dp
 val radius50 = 50.dp
 //endregion
 

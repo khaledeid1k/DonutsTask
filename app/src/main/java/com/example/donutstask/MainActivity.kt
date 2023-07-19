@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.donutstask.ui.screens.Home
 import com.example.donutstask.ui.screens.HomeContent
+import com.example.donutstask.ui.screens.SingleDonut
 import com.example.donutstask.ui.screens.WelcomeScreen
 import com.example.donutstask.ui.theme.DonutsTaskTheme
 
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeContent()
+                    SingleDonut()
                 }
             }
         }
