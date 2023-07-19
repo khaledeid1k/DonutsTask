@@ -1,6 +1,7 @@
 package com.example.donutstask.ui.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -26,9 +27,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.donutstask.R
 import com.example.donutstask.ui.compose.DonutItem
 import com.example.donutstask.ui.compose.TodayOffer
+import com.example.donutstask.ui.nav.navigateToHomeScreen
+import com.example.donutstask.ui.nav.navigateToSingleDonut
 import com.example.donutstask.ui.theme.LightPrimary
 import com.example.donutstask.ui.theme.LightWhite500
 import com.example.donutstask.ui.theme.Type.Body
@@ -41,13 +45,12 @@ import com.example.donutstask.ui.theme.space16
 import com.example.donutstask.ui.theme.space50
 import com.example.donutstask.ui.theme.space6
 
-@Preview
 @Composable
-fun Home() {
-    HomeContent()
+fun Home(navController: NavController) {
+    HomeContent(navController)
 }
 @Composable
-fun HomeContent() {
+fun HomeContent(navController: NavController) {
 Column (
     verticalArrangement = Arrangement.Top,
 modifier = Modifier
@@ -95,6 +98,9 @@ modifier = Modifier
         fontWeight = FontWeight.Bold)
     LazyRow(
         modifier = Modifier
+            .clickable(
+                onClick= navController::navigateToSingleDonut
+            )
             .padding(start = space16),
         contentPadding = PaddingValues(space16),
         horizontalArrangement = Arrangement.spacedBy(space16)

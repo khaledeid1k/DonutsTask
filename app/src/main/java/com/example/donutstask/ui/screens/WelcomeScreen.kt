@@ -18,7 +18,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
+import androidx.navigation.NavHostController
 import com.example.donutstask.R
+import com.example.donutstask.ui.nav.navigateToHomeScreen
 import com.example.donutstask.ui.theme.ButtonHeight
 import com.example.donutstask.ui.theme.LightPrimary
 import com.example.donutstask.ui.theme.LightWhite500
@@ -30,12 +32,12 @@ import com.example.donutstask.ui.theme.space19
 import com.example.donutstask.ui.theme.space40
 
 @Composable
-fun WelcomeScreen() {
-    WelcomeScreenContent()
+fun WelcomeScreen(
+    navController: NavHostController) {
+    WelcomeScreenContent(navController)
 }
-@Preview
 @Composable
-fun WelcomeScreenContent(dsf:String="") {
+fun WelcomeScreenContent(navController: NavHostController) {
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
@@ -74,7 +76,7 @@ fun WelcomeScreenContent(dsf:String="") {
                             bottom.linkTo(button.top, space16)
                         })
         Button(
-            onClick = {  },
+            onClick =   navController::navigateToHomeScreen,
             colors = ButtonDefaults.buttonColors(contentColor = LightPrimary, containerColor = LightWhite500),
             shape = RoundedCornerShape(radius50),
             modifier = Modifier

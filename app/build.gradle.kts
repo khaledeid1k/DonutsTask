@@ -70,4 +70,5 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
     debugImplementation(libs.constraintlayout)
+    debugImplementation(libs.navigation)
 }

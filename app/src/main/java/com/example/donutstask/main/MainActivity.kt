@@ -1,4 +1,4 @@
-package com.example.donutstask
+package com.example.donutstask.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,10 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.donutstask.ui.screens.Home
-import com.example.donutstask.ui.screens.HomeContent
 import com.example.donutstask.ui.screens.SingleDonut
-import com.example.donutstask.ui.screens.WelcomeScreen
 import com.example.donutstask.ui.theme.DonutsTaskTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    SingleDonut()
+                    BrainBurstApp()
                 }
             }
         }

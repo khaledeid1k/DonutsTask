@@ -2,6 +2,7 @@ package com.example.donutstask.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -38,7 +39,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.example.donutstask.R
+import com.example.donutstask.ui.nav.back
 import com.example.donutstask.ui.theme.Brand400
 import com.example.donutstask.ui.theme.Brand600
 import com.example.donutstask.ui.theme.ButtonHeight
@@ -62,13 +65,12 @@ import com.example.donutstask.ui.theme.textSize30
 import java.time.temporal.TemporalQueries.offset
 
 @Composable
-fun SingleDonut() {
-    SingleDonutContent()
+fun SingleDonut(navController: NavHostController) {
+    SingleDonutContent(navController)
 }
 
-@Preview
 @Composable
-fun SingleDonutContent() {
+fun SingleDonutContent(navController: NavHostController) {
 
     Column(
         modifier = Modifier
@@ -79,6 +81,7 @@ fun SingleDonutContent() {
     ) {
         Icon(
             modifier = Modifier
+                .clickable(onClick = navController::back)
                 .padding(
                     space6
                 )
