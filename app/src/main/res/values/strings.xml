@@ -2,4 +2,10 @@
     <string name="app_name">DonutsTask</string>
     <string name="gonuts_with_donuts">Gonuts \n with \n Donuts</string>
     <string name="describe_donuts">Gonuts with Donuts is a Sri Lanka \n dedicated food outlets for specialize \n manufacturing of Donuts in Colombo,\n Sri Lanka.</string>
+    <string name="let_s_gonuts">Let’s Gonuts!</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="order_your_favourite">Order your favourite donuts from here</string>
+    <string name="today_offers">Today Offers</string>
+    <string name="strawberry_wheel">Strawberry Wheel</string>
+    <string name="these_baked_strawberry_donuts_are_filled_with_fresh_strawberries">These Baked Strawberry Donuts are filled with fresh strawberries</string>
 </resources>

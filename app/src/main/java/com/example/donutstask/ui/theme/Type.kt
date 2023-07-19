@@ -117,22 +117,29 @@ object Type {
     )
 
     val Body = TextStyle(
-        fontFamily = Poppins,
-        fontWeight = FontWeight.Normal,
+        fontFamily = FontFamily(Font(R.font.inter_light)),
+        fontWeight = FontWeight.Medium,
         fontSize = textSize14,
-        letterSpacing = textSize0
     )
 
     val Title = TextStyle(
         fontFamily = FontFamily(Font(R.font.inter_black)),
         fontWeight = FontWeight.Bold,
         fontSize = textSize54,
+        color = lightTextColor,
     )
 
     val SubTitle = TextStyle(
         fontFamily = FontFamily(Font(R.font.inter_light)),
         fontWeight = FontWeight.Medium,
         fontSize = textSize18,
+        color = lightTextColor,
+    )
+    val Title2 = TextStyle(
+        fontFamily = FontFamily(Font(R.font.inter_light)),
+        fontWeight = FontWeight.SemiBold,
+        fontSize = textSize30,
+        color = lightTextColor,
     )
     val TextButton = TextStyle(
         fontFamily = FontFamily(Font(R.font.inter_medium)),

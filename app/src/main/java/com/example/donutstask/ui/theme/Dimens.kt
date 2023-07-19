@@ -9,7 +9,10 @@ val space0 = 0.dp
 
 val zero = 0.dp
 val space2 = 2.dp
+val space3 = 3.dp
 val space4 = 4.dp
+val space6 = 6.dp
+val space7 = 7.dp
 val space8 = 8.dp
 val space10 = 10.dp
 val space16 = 16.dp
@@ -26,7 +29,9 @@ val space56 = 56.dp
 val space60 = 60.dp
 val space64 = 64.dp
 val space72 = 72.dp
+val space76 = 76.dp
 val space80 = 80.dp
+val space90 = 90.dp
 //endregion
 
 //region Text Size Dimensions
@@ -37,6 +42,7 @@ val textSize16 = 16.sp
 val textSize18 = 18.sp
 val textSize20 = 20.sp
 val textSize24 = 24.sp
+val textSize30 = 30.sp
 val textSize32 = 32.sp
 val textSize54 = 54.sp
 
@@ -69,16 +75,16 @@ val ButtonWidthNetWork = 120.dp
 val ButtonHeight = 67.dp
 val WidthDonut1 = 186.dp
 val HeightDonut1 = 186.dp
+val TextWidth = 250.dp
 
 //endregion
 
 // region Radius Dimensions
+val radius15 = 15.dp
 val radius16 = 16.dp
 val radius24 = 24.dp
 val radius50 = 50.dp
 //endregion
 
 
-//region DonutSize
-
-//endregion
+const val MaxLines=3
